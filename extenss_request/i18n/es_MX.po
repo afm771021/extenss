@@ -447,19 +447,14 @@ msgstr "Activación"
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
 msgid "Add a beneficiary type record in the Personal References tab"
-msgstr ""
-"Agregue un registro de tipo de beneficiario en la pestaña Referencias "
-"personales"
+msgstr "Agregue un registro de tipo de beneficiario en la pestaña Referencias personales"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Add a record of type bound by solidarity in the Personal References tab"
-msgstr ""
-"Agregue un registro de tipo Obligado solidario en la pestaña Referencias "
-"personales"
+msgid "Add a record of type bound by solidarity in the Personal References tab"
+msgstr "Agregue un registro de tipo Obligado solidario en la pestaña Referencias personales"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
@@ -1408,109 +1403,69 @@ msgstr "Fecha final"
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Enter a Beneficiaries type record in Personal references tab for quotation "
-"number %s"
-msgstr ""
-"Ingrese un registro de tipo de Beneficiarios en la pestaña Referencias "
-"personales para el número de cotización %s"
+msgid "Enter a Beneficiaries type record in Personal references tab for quotation number %s"
+msgstr "Ingrese un registro de tipo de Beneficiarios en la pestaña Referencias personales para el número de cotización %s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Enter a Beneficiaries type record in Personal references tab for request "
-"number %s"
-msgstr ""
-"Ingrese un registro de tipo de Beneficiarios en la pestaña Referencias "
-"personales para el número de solicitud %s"
+msgid "Enter a Beneficiaries type record in Personal references tab for request number %s"
+msgstr "Ingrese un registro de tipo de Beneficiarios en la pestaña Referencias personales para el número de solicitud %s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Enter a Endorsement type record in Personal references tab for quotation "
-"number %s"
-msgstr ""
-"Ingrese un registro de tipo de Aval en la pestaña Referencias personales "
-"para el número de cotización %s"
+msgid "Enter a Endorsement type record in Personal references tab for quotation number %s"
+msgstr "Ingrese un registro de tipo de Aval en la pestaña Referencias personales para el número de cotización %s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Enter a Endorsement type record in Personal references tab for request "
-"number %s"
-msgstr ""
-"Ingrese un registro de tipo de Aval en la pestaña Referencias personales "
-"para el número de solicitud %s"
+msgid "Enter a Endorsement type record in Personal references tab for request number %s"
+msgstr "Ingrese un registro de tipo de Aval en la pestaña Referencias personales para el número de solicitud %s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Enter a Solidarity bound type record in Personal references tab for "
-"quotation number %s"
-msgstr ""
-"Ingrese un registro de tipo Obligado solidario en la pestaña Referencias "
-"personales para el número de cotización %s"
+msgid "Enter a Solidarity bound type record in Personal references tab for quotation number %s"
+msgstr "Ingrese un registro de tipo Obligado solidario en la pestaña Referencias personales para el número de cotización %s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Enter a Solidarity bound type record in Personal references tab for request "
-"number %s"
-msgstr ""
-"Ingrese un registro de tipo Obligado solidario en la pestaña Referencias "
-"personales para el número de solicitud %s"
+msgid "Enter a Solidarity bound type record in Personal references tab for request number %s"
+msgstr "Ingrese un registro de tipo Obligado solidario en la pestaña Referencias personales para el número de solicitud %s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
 msgid "Enter a record in Financial Situation tab"
-msgstr ""
+msgstr "Introduzca un registro en la pestaña Situación financiera"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Enter a record in Financial position tab in the section Assets for quotation"
-" number %s"
-msgstr ""
-"Ingrese un registro en la pestaña Posición financiera en la sección Activos "
-"para el número de cotización %s"
+msgid "Enter a record in Financial position tab in the section Assets for quotation number %s"
+msgstr "Ingrese un registro en la pestaña Situación financiera en la sección Activos para el número de cotización %s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Enter a record in Financial position tab in the section Assets for request "
-"number %s"
-msgstr ""
-"Ingrese un registro en la pestaña Posición financiera en la sección Activos "
-"para el número de solicitud %s"
+msgid "Enter a record in Financial position tab in the section Assets for request number %s"
+msgstr "Ingrese un registro en la pestaña Situación financiera en la sección Activos para el número de solicitud %s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Enter a record in Financial position tab in the section Passives for "
-"quotation number %s"
-msgstr ""
-"Ingrese un registro en la pestaña Posición financiera en la sección Pasivos "
-"para el número de cotización %s"
+msgid "Enter a record in Financial position tab in the section Passives for quotation number %s"
+msgstr "Ingrese un registro en la pestaña Situación financiera en la sección Pasivos para el número de cotización %s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Enter a record in Financial position tab in the section Passives for request"
-" number %s"
-msgstr ""
-"Ingrese un registro en la pestaña Posición financiera en la sección Pasivos "
-"para el número de solicitud %s"
+msgid "Enter a record in Financial position tab in the section Passives for request number %s"
+msgstr "Ingrese un registro en la pestaña Situación financiera en la sección Pasivos para el número de solicitud %s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
@@ -1522,85 +1477,58 @@ msgstr "Ingrese un registro en la pestaña Propiedad %s"
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Enter a record in Source income tab in the section of Expenses for quotation"
-" number %s"
-msgstr ""
-"Ingrese un registro en la pestaña Ingresos de origen en la sección Gastos "
-"para el número de cotización% s"
+msgid "Enter a record in Source income tab in the section of Expenses for quotation number %s"
+msgstr "Ingrese un registro en la pestaña Ingresos de origen en la sección Gastos para el número de cotización% s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Enter a record in Source income tab in the section of Expenses for request "
-"number %s"
-msgstr ""
-"Ingrese un registro en la pestaña Ingresos de origen en la sección Gastos "
-"para el número de solicitud %s"
+msgid "Enter a record in Source income tab in the section of Expenses for request number %s"
+msgstr "Ingrese un registro en la pestaña Ingresos de origen en la sección Gastos para el número de solicitud %s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Enter a record in Source income tab in the section of Income for quotation "
-"number %s"
-msgstr ""
-"Ingrese un registro en la pestaña Ingresos de origen en la sección Ingresos "
-"para el número de cotización %s"
+msgid "Enter a record in Source income tab in the section of Income for quotation number %s"
+msgstr "Ingrese un registro en la pestaña Ingresos de origen en la sección Ingresos para el número de cotización %s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Enter a record in Source income tab in the section of Income for request "
-"number %s"
-msgstr ""
-"Ingrese un registro en la pestaña Ingresos de origen en la sección Gastos "
-"para el número de solicitud %s"
+msgid "Enter a record in Source income tab in the section of Income for request number %s"
+msgstr "Ingrese un registro en la pestaña Ingresos de origen en la sección Gastos para el número de solicitud %s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"Enter a value in any of the fields Phone, Cell phone or Email in tab "
-"Personal references"
-msgstr ""
-"Ingrese un valor en cualquiera de los campos Teléfono, Teléfono celular o "
-"Correo electrónico en la pestaña Referencias personales"
+msgid "Enter a value in any of the fields Phone, Cell phone or Email in tab Personal references"
+msgstr "Ingrese un valor en cualquiera de los campos Teléfono, Teléfono celular o Correo electrónico en la pestaña Referencias personales"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
 msgid "Enter data in Income statement tab in any of the sections"
-msgstr ""
-"Ingrese los datos en la pestaña Estado de resultados en cualquiera de las "
-"secciones"
+msgstr "Ingrese los datos en la pestaña Estado de resultados en cualquiera de las secciones"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
 msgid "Enter data in Liabilities tab in any of the sections"
-msgstr ""
-"Ingrese los datos en la pestaña Pasivos en cualquiera de las secciones"
+msgstr "Ingrese los datos en la pestaña Pasivos en cualquiera de las secciones"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
 msgid "Enter data in Residence profile tab for quotation number %s"
-msgstr ""
-"Ingrese los datos en la pestaña Perfil de residencia para el número de "
-"presupuesto %s"
+msgstr "Ingrese los datos en la pestaña Perfil de residencia para el número de presupuesto %s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
 msgid "Enter data in Residence profile tab for request number %s"
-msgstr ""
-"Ingrese los datos en la pestaña Perfil de residencia para el número de "
-"solicitud %s"
+msgstr "Ingrese los datos en la pestaña Perfil de residencia para el número de solicitud %s"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
@@ -1613,9 +1541,7 @@ msgstr "Ingrese datos en la pestaña Activos en cualquiera de las secciones"
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
 msgid "Enter the amount for Opennig in Tab Financial Factoring Opening"
-msgstr ""
-"Ingrese el importe de Apertura en la pestaña Apertura de factoraje "
-"financiero"
+msgstr "Ingrese el importe de Apertura en la pestaña Apertura de factoraje financiero"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
@@ -1627,17 +1553,13 @@ msgstr "Ingrese el importe de la disposición"
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
 msgid "Enter the amount for disposition in Tab Financial Factoring Provision"
-msgstr ""
-"Ingrese el importe de Apertura en la pestaña Disposición de factoraje "
-"financiero"
+msgstr "Ingrese el importe de Apertura en la pestaña Disposición de factoraje financiero"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
 msgid "Enter the product for Opennig in Tab Financial Factoring Opening"
-msgstr ""
-"Ingrese el producto de Apertura en la pestaña Apertura de factoraje "
-"financiero"
+msgstr "Ingrese el producto de Apertura en la pestaña Apertura de factoraje financiero"
 
 #. module: extenss_request
 #: model:ir.model.fields,field_description:extenss_request.field_extenss_crm_lead_source_income__tipo_gasto
@@ -2652,9 +2574,7 @@ msgstr "Descargue los documentos para continuar"
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
 msgid "Please enter valid email address in tab Personal references"
-msgstr ""
-"Ingrese una dirección de correo electrónico válida en la pestaña Referencias"
-" personales"
+msgstr "Ingrese una dirección de correo electrónico válida en la pestaña Referencias personales"
 
 #. module: extenss_request
 #: model_terms:ir.ui.view,arch_db:extenss_request.pagare_amortization
@@ -3061,12 +2981,8 @@ msgstr "La residencia de los años debe ser de 3 dígitos"
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
-msgid ""
-"The amount of the selected product exceeds the limits, please select another"
-" product"
-msgstr ""
-"La cantidad del producto seleccionado supera los límites, seleccione otro "
-"producto"
+msgid "The amount of the selected product exceeds the limits, please select another product"
+msgstr "La cantidad del producto seleccionado supera los límites, seleccione otro producto"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0
@@ -3084,8 +3000,7 @@ msgstr "El celular debe tener 10 dígitos en la pestaña Referencias personales"
 #: code:addons/extenss_request/models/crm_lead.py:0
 #, python-format
 msgid "The phone must be a 10 digits in tab Personal references"
-msgstr ""
-"El teléfono debe tener 10 dígitos en la pestaña Referencias personales"
+msgstr "El teléfono debe tener 10 dígitos en la pestaña Referencias personales"
 
 #. module: extenss_request
 #: code:addons/extenss_request/models/crm_lead.py:0

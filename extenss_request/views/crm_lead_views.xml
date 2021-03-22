@@ -114,13 +114,15 @@
                 <field name="sequence_stage" invisible="1"/>
                 <field name="btn_active" invisible="1"/>
                 <field name="flag_documents"/><!--attrs="{'invisible': ['|', ('product_name', '=', 'LFF'),('product_name', '=', 'ff')]}"-->
-                <field name="flag_initial_payment" attrs="{'invisible': ['|', ('product_name', '=', 'DN'),('product_name', '=', 'ff')]}"/>
+                <field name="cs_s" invisible="1"/>
+                <field name="flag_initial_payment" attrs="{'invisible': ['|','|', ('product_name', '=', 'DN'),('product_name', '=', 'ff'),('cs_s', '=', True)]}"/>
                 <field name="flag_dispersion" attrs="{'invisible': [('product_name', '!=', 'DN'),('product_name', '!=', 'ff')]}"/>
                 <field name="ref_number"/>
                 <field name="contract_number" attrs="{'invisible': [('product_name', '!=', 'ff'),('product_name', '!=', 'LFF')]}"/>
                 <!-- <field name="product_id" readonly="1"/> -->
                 <!--><field name="id"/><-->
                 <field name="partner_type" invisible="1"/>
+
             </field>
                     <!--><notebook><-->
             <xpath expr="//page[@name='lead']" position="after">
