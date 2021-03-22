@@ -423,7 +423,7 @@ class Credits(models.Model):
     security_deposit_balance = fields.Monetary(string='Security Deposit Balance', currency_field='company_currency', tracking=True, translate=True)
     balance_income_deposit = fields.Monetary(string='Balance Income on Deposit', currency_field='company_currency', tracking=True, translate=True)
     total_settle = fields.Monetary(string='Total to Settle', currency_field='company_currency', tracking=True, translate=True)
-    balance_inicial = fields.Monetary(string='Balance intial', currency_field='company_currency', tracking=True, translate=True)
+    balance_inicial = fields.Monetary(string='Balance initial', currency_field='company_currency', tracking=True, translate=True)
 
     conciliation_credit_ids = fields.Many2many('extenss.credit.conciliation_lines',string='Payment')
     #balance = fields.Monetary(related='bill_id.balance',currency_field='company_currency')

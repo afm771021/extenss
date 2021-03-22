@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-11 16:56+0000\n"
-"PO-Revision-Date: 2021-03-11 16:56+0000\n"
+"POT-Creation-Date: 2021-03-22 20:45+0000\n"
+"PO-Revision-Date: 2021-03-22 20:45+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -222,11 +222,6 @@ msgid "Credit FF"
 msgstr ""
 
 #. module: extenss_ff
-#: model:ir.model,name:extenss_ff.model_extenss_credit
-msgid "Credit Financial factoring"
-msgstr "Crédito Factoraje Financiero"
-
-#. module: extenss_ff
 #: model_terms:ir.ui.view,arch_db:extenss_ff.extenss_credit_ff_moras_view_graph
 #: model_terms:ir.ui.view,arch_db:extenss_ff.extenss_credit_ff_view_graph
 msgid "Credit Graph"
@@ -411,7 +406,7 @@ msgstr "Gerente"
 #: model_terms:ir.ui.view,arch_db:extenss_ff.view_form_extenss_ff_moras
 #: model_terms:ir.ui.view,arch_db:extenss_ff.view_form_extenss_ff_statement_account
 msgid "Moras"
-msgstr "Moras"
+msgstr ""
 
 #. module: extenss_ff
 #: model_terms:ir.ui.view,arch_db:extenss_ff.portal_extenss_ff_page
@@ -481,11 +476,6 @@ msgstr "Pre-aviso"
 #: model_terms:ir.ui.view,arch_db:extenss_ff.view_form_extenss_ff_activation_line
 msgid "Provisions"
 msgstr "Disposiciones"
-
-#. module: extenss_ff
-#: model_terms:ir.ui.view,arch_db:extenss_ff.extenss_credit_ff_view_dashboard
-msgid "Prueba"
-msgstr ""
 
 #. module: extenss_ff
 #: model_terms:ir.ui.view,arch_db:extenss_ff.portal_extenss_ff_page

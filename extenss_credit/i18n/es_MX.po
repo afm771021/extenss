@@ -4,29 +4,25 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 13.0+e-20200316\n"
+"Project-Id-Version: Odoo Server 13.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-11 05:33+0000\n"
-"PO-Revision-Date: 2021-01-11 00:19-0600\n"
+"POT-Creation-Date: 2021-03-22 21:09+0000\n"
+"PO-Revision-Date: 2021-03-22 21:09+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: \n"
+"Content-Transfer-Encoding: \n"
 "Language: es_MX\n"
-"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: \n"
 
 #. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
 msgid ""
 "\", se  expide el  presente  Estado de  Cuenta  \n"
-"                                en términos de los artículos  57  y  58  de  la  "
-"Ley  de  Uniones  de  Crédito,  CERTIFICA  y  \n"
-"                                hace  constar   que   efectuado el  cálculo  de  "
-"los  intereses  ordinarios  y   moratorios   de   \n"
-"                                acuerdo  al   Contrato Marco de Arrendamiento  y "
-"_________________   que   celebran   por   una   \n"
+"                                en términos de los artículos  57  y  58  de  la  Ley  de  Uniones  de  Crédito,  CERTIFICA  y  \n"
+"                                hace  constar   que   efectuado el  cálculo  de  los  intereses  ordinarios  y   moratorios   de   \n"
+"                                acuerdo  al   Contrato Marco de Arrendamiento  y _________________   que   celebran   por   una   \n"
 "                                parte   en   su  carácter de arrendador \""
 msgstr ""
 
@@ -51,12 +47,23 @@ msgid "'Account Status %s' % (object.credit_id)"
 msgstr "'Estado de cuenta %s' % (object.credit_id)"
 
 #. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_my_home_menu_credit
+msgid "<em>Credit</em>"
+msgstr "<em>Crédito</em>"
+
+#. module: extenss_credit
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#, python-format
+msgid "<p>Factoring company: %s ,</p><p>Assignor: %s ,</p><p>Assigned %s </p>"
+msgstr "<p>Empresa Factoraje: %s ,</p><p>Cedente: %s ,</p><p>Cedido %s </p>"
+
+#. module: extenss_credit
 #: code:addons/extenss_credit/models/extenss_credit.py:0
 #, python-format
 msgid ""
-"<p>No. Pago %s ,</p><p>Fecha de vencimiento %s ,</p><p>Saldo inicial %s ,</"
-"p><p>Capital %s ,</p><p>Interes %s ,</p><p> Payment %s ,</p><p> IVA renta %s ,</"
-"p><p> Renta total %s </p>"
+"<p>No. Pago %s ,</p><p>Fecha de vencimiento %s ,</p><p>Saldo inicial %s "
+",</p><p>Capital %s ,</p><p>Interes %s ,</p><p> Payment %s ,</p><p> IVA renta"
+" %s ,</p><p> Renta total %s </p>"
 msgstr ""
 
 #. module: extenss_credit
@@ -95,6 +102,7 @@ msgid "Active"
 msgstr "Activo"
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__advance_date
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__advance_date
 msgid "Advance date"
 msgstr "Fecha de adelanto"
@@ -114,24 +122,25 @@ msgstr "Tipo de adelanto"
 #. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
 msgid ""
-"Advertencias: 1.-Interés Moratorio.- Los Intereses Moratorios se calcularán sobre "
-"saldos insolutos del crédito de acuerdo al Contrato Específico de Arrendamiento "
-"Financiero desde que incurra el incumplimiento hasta su pago total.  2.- Contratar "
-"créditos por arriba de su capacidad de pago, puede afectar su historial "
-"crediticio. 3.- El Avalista, Obligado Solidario o Coacreditado, responderá como "
-"Obligado Prncipal frente a la \"Entidad Financiera\""
+"Advertencias: 1.-Interés Moratorio.- Los Intereses Moratorios se calcularán "
+"sobre saldos insolutos del crédito de acuerdo al Contrato Específico de "
+"Arrendamiento Financiero desde que incurra el incumplimiento hasta su pago "
+"total.  2.- Contratar créditos por arriba de su capacidad de pago, puede "
+"afectar su historial crediticio. 3.- El Avalista, Obligado Solidario o "
+"Coacreditado, responderá como Obligado Prncipal frente a la \"Entidad "
+"Financiera\""
 msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__af
 msgid "Af"
-msgstr "Af"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_moras__end_date
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
 msgid "Al"
-msgstr "Al"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__amortization_ids
@@ -139,12 +148,15 @@ msgid "Amortization Table"
 msgstr "Tabla de amortización"
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__amount_req
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_accounting_payments__amount
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_concepts_expiration__amount_concept
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_conciliation_lines__amount
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__amount_not
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_movements__amount
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__amount_req
+#: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit__advan_type__amount
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_my_credits
 msgid "Amount"
 msgstr "Importe"
 
@@ -156,7 +168,12 @@ msgstr "Monto financiado"
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__amount_condonation
 msgid "Amount condonation"
-msgstr "Monto condonación"
+msgstr "Monto condinación"
+
+#. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Amount financed:"
+msgstr "Monto a disponer:"
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__amount_residual_value
@@ -171,7 +188,7 @@ msgstr "Monto s/iva"
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__ap
 msgid "Ap"
-msgstr "Ap"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit_conciliation_lines__status__applied
@@ -191,22 +208,33 @@ msgid "Balance Income on Deposit"
 msgstr "Balance de ingresos en depósito"
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__balance_initial_adv
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__balance_inicial
 msgid "Balance initial"
-msgstr "Saldo inicial"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__balance_interest_mora
 msgid "Balance interest moratoriums"
-msgstr "Saldo interés moratorio"
+msgstr ""
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__balance_inicial
+msgid "Balance initial"
+msgstr ""
+
+#. module: extenss_credit
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#: code:addons/extenss_credit/models/extenss_credit.py:0
 #: code:addons/extenss_credit/models/extenss_credit.py:0
 #, python-format
 msgid "Bank Statement %s.pdf"
 msgstr "Estado de Cuenta Bancario %s.pdf"
 
 #. module: extenss_credit
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#: code:addons/extenss_credit/models/extenss_credit.py:0
 #: code:addons/extenss_credit/models/extenss_credit.py:0
 #, python-format
 msgid "Bank Statement.pdf"
@@ -216,7 +244,7 @@ msgstr "Estado de Cuenta Bancario.pdf"
 #: model:base.automation,name:extenss_credit.automatic_moras
 #: model:ir.actions.server,name:extenss_credit.automatic_moras_ir_actions_server
 msgid "Base Automation: generating moras"
-msgstr "Base Automatización: generar moras"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__base_rate_type
@@ -233,6 +261,11 @@ msgstr "Valor de la tasa base"
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_conciliation_lines__bill_id
 msgid "Bill"
 msgstr "Cuenta"
+
+#. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Bill:"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__office_id
@@ -260,6 +293,17 @@ msgid "Calculation Base"
 msgstr "Base de cálculo"
 
 #. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Calculation Base:"
+msgstr ""
+
+#. module: extenss_credit
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#, python-format
+msgid "Calculations are missing"
+msgstr ""
+
+#. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.create_movement_form
 msgid "Cancel"
 msgstr "Cancelar"
@@ -275,10 +319,13 @@ msgstr "Cancelado"
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_restructuring_table__capital
 #: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit_concepts_expiration__concept__capital
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
 msgid "Capital"
-msgstr "Capital"
+msgstr ""
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__capital_vat
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__capital_vat_adv
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__capital_vat
 #: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit_concepts_expiration__concept__capvat
 msgid "Capital VAT"
@@ -364,7 +411,7 @@ msgstr "Condonación"
 #. module: extenss_credit
 #: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit_concepts_expiration__concept__condonation
 msgid "Condonation interest moratoriums"
-msgstr "Condonación interés moratorios"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.actions.act_window,name:extenss_credit.create_movement_wizard
@@ -416,6 +463,9 @@ msgstr "Creado el"
 #: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit_accounting_payments__movement_type__abono
 #: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit_movements__movement_type__abono
 #: model:ir.module.category,name:extenss_credit.module_extenss_credit_category
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_my_credits
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_my_home_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_my_home_menu_credit
 msgid "Credit"
 msgstr "Crédito"
 
@@ -426,8 +476,8 @@ msgstr "Vencimiento del crédito"
 
 #. module: extenss_credit
 #: model:ir.model,name:extenss_credit.model_extenss_credit
-msgid "Credit Payroll Discount"
-msgstr "Crédito Descuento Nómina"
+msgid "Credit Financial leasing"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model,name:extenss_credit.model_extenss_credit_request
@@ -445,6 +495,21 @@ msgid "Credit status"
 msgstr "Estado del crédito"
 
 #. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Credit status:"
+msgstr ""
+
+#. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Credit type:"
+msgstr ""
+
+#. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Credit:"
+msgstr ""
+
+#. module: extenss_credit
 #: model:ir.actions.server,name:extenss_credit.ir_cron_generating_account_status_ir_actions_server
 #: model:ir.cron,cron_name:extenss_credit.ir_cron_generating_account_status
 #: model:ir.cron,name:extenss_credit.ir_cron_generating_account_status
@@ -456,7 +521,7 @@ msgstr "Credito: Crear estado de cuenta"
 #: model:ir.cron,cron_name:extenss_credit.ir_cron_create_conciliation_credit
 #: model:ir.cron,name:extenss_credit.ir_cron_create_conciliation_credit
 msgid "Credit: create conciliation credit"
-msgstr "Credito: crear conciliación credito"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.actions.server,name:extenss_credit.ir_cron_create_expiry_notices_ir_actions_server
@@ -473,9 +538,14 @@ msgid "Credit: send expiry notices"
 msgstr "Credito: Enviar Avisos de vencimiento"
 
 #. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_my_credits
+msgid "Credits"
+msgstr "Créditos"
+
+#. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__cs
 msgid "Cs"
-msgstr "Cs"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__company_currency
@@ -507,6 +577,16 @@ msgid "Customer type"
 msgstr "Tipo de cliente"
 
 #. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Customer type:"
+msgstr ""
+
+#. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Customer:"
+msgstr "Cliente:"
+
+#. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
 msgid "DATOS DEL ARRENDAMIENTO"
 msgstr ""
@@ -532,10 +612,15 @@ msgid "DIRECCION DEL ARRENDATARIO:"
 msgstr ""
 
 #. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
+msgid "DIRECCION DEL CLIENTE:"
+msgstr ""
+
+#. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__dn
 #: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit_conciliation_lines__type_rec__dn
 msgid "DN"
-msgstr "DN"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_conciliation_lines__date
@@ -543,9 +628,20 @@ msgid "Date"
 msgstr "Fecha"
 
 #. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_my_credits
+msgid "Date created"
+msgstr ""
+
+#. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__date_payment
-msgid "Date payment"
-msgstr "Fecha pago"
+msgid "Date payment moras"
+msgstr ""
+
+#. module: extenss_credit
+#: code:addons/extenss_credit/controllers/portal.py:0
+#, python-format
+msgid "DateTime"
+msgstr "Fecha y hora"
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_moras__days
@@ -555,9 +651,11 @@ msgstr "Días"
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__days_mora
 msgid "Days mora"
-msgstr "Días mora"
+msgstr ""
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__days_interest
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__days_interest_adv
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__days_interest
 msgid "Days of interest"
 msgstr "Dias de interés"
@@ -576,7 +674,7 @@ msgstr "Días para transferir a cartera vencida"
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_moras__init_date
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
 msgid "Del"
-msgstr "Del"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__dep_income_application
@@ -639,7 +737,7 @@ msgstr "Fecha de vencimiento"
 #. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
 msgid "Días"
-msgstr "Días"
+msgstr ""
 
 #. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
@@ -662,6 +760,11 @@ msgid "ESTADO DE CUENTA CREDITO SIMPLE"
 msgstr ""
 
 #. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
+msgid "ESTADO DE CUENTA DESCUENTO EN NOMINA"
+msgstr ""
+
+#. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__flag_early_settlement
 #: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit_request__type_request__early_settlement
 msgid "Early settlement"
@@ -670,12 +773,9 @@ msgstr "Liquidación anticipada"
 #. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
 msgid ""
-"El ____________________________, de  profesión Contador Público Titulado, lo  "
-"cual  acredita con  \n"
-"                                Cédula Profesional  No. ________, expedida  en  "
-"la  Ciudad  de  México,  por  la  Dirección de \n"
-"                                Profesiones, dependiente de la Secretaría de "
-"Educación Pública, como Contador Autorizado por la \n"
+"El ____________________________, de  profesión Contador Público Titulado, lo  cual  acredita con  \n"
+"                                Cédula Profesional  No. ________, expedida  en  la  Ciudad  de  México,  por  la  Dirección de \n"
+"                                Profesiones, dependiente de la Secretaría de Educación Pública, como Contador Autorizado por la \n"
 "                                \""
 msgstr ""
 
@@ -692,14 +792,39 @@ msgstr "Saldo final"
 #. module: extenss_credit
 #: code:addons/extenss_credit/models/extenss_credit.py:0
 #, python-format
+msgid "Enter the Date for calculation"
+msgstr ""
+
+#. module: extenss_credit
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#, python-format
+msgid "Enter the amount, for calculation"
+msgstr ""
+
+#. module: extenss_credit
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#, python-format
 msgid "Enter the penalty percentage, is required for the type of credit"
-msgstr "Ingrese el porcentaje de penalización, se requiere para el tipo de crédito"
+msgstr ""
+"Ingrese el porcentaje de penalización, se requiere para el tipo de crédito"
+
+#. module: extenss_credit
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#, python-format
+msgid "Enter the type, for calculation"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_amortization__expiration_date
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_restructuring_table__expiration_date
 msgid "Expiration Date"
 msgstr "Fecha de vencimiento"
+
+#. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Expiration date"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit__portfolio_type__vencida
@@ -750,9 +875,14 @@ msgid "FECHA:"
 msgstr ""
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__ff
+msgid "FF"
+msgstr ""
+
+#. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__rate_arrears_interest
 msgid "Factor"
-msgstr "Factor"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_conciliation__final_balance
@@ -783,6 +913,11 @@ msgstr "Frecuencia"
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__frequency_days
 msgid "Frequency Days"
 msgstr "Días de frecuencia"
+
+#. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Frequency:"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_concepts_expiration__full_paid
@@ -824,18 +959,18 @@ msgstr "Fecha de contratación"
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__id
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_restructuring_table__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__iva
 msgid "IVA"
-msgstr "IVA"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_amortization__iva_capital
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_restructuring_table__iva_capital
 msgid "IVA Capital"
-msgstr "IVA Capital"
+msgstr ""
 
 #. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
@@ -910,6 +1045,7 @@ msgstr "Saldo inicial"
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_conciliation__initial_balance
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_movements__initial_balance
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
 msgid "Initial balance"
 msgstr "Saldo inicial"
 
@@ -933,6 +1069,7 @@ msgstr "Intereses moratorios"
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_restructuring_table__interest
 #: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit_concepts_expiration__concept__interest
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
 msgid "Interest"
 msgstr "Interés"
 
@@ -944,9 +1081,10 @@ msgstr "IVA de intereses"
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__interest_moratoriums
 msgid "Interest moratoriums"
-msgstr "Interés moratorio"
+msgstr ""
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__vat_interest_mora
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__vat_interest_mora
 msgid "Interest moratoriums VAT"
 msgstr "IVA de intereses moratorios"
@@ -957,16 +1095,26 @@ msgid "Interest rate"
 msgstr "Tasa de interés"
 
 #. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Interest rate:"
+msgstr ""
+
+#. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__interests
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__interests_adv
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__interests
 msgid "Interests"
 msgstr "Intereses"
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__interests_vat
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__interests_vat_adv
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__interests_vat
 msgid "Interests VAT"
 msgstr "IVA de interes"
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__interests_moratoriums
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__interests_moratoriums
 msgid "Interests moratoriums"
 msgstr "Intereses moratorios"
@@ -984,12 +1132,27 @@ msgstr "IVA Interés"
 #. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
 msgid "Iva Payment"
-msgstr "IVA Pago"
+msgstr ""
+
+#. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Iva capital"
+msgstr ""
 
 #. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
 msgid "Iva intereses"
-msgstr "IVA Interés"
+msgstr ""
+
+#. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Iva interest"
+msgstr ""
+
+#. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Iva rent"
+msgstr ""
 
 #. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
@@ -1145,6 +1308,14 @@ msgstr ""
 
 #. module: extenss_credit
 #: code:addons/extenss_credit/models/extenss_credit.py:0
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#: code:addons/extenss_credit/models/extenss_credit.py:0
 #, python-format
 msgid "New"
 msgstr "Nuevo"
@@ -1156,9 +1327,22 @@ msgid "No Pay"
 msgstr "No de pago"
 
 #. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "No pay"
+msgstr ""
+
+#. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
 msgid "No. Payment #"
-msgstr "No. Pago"
+msgstr ""
+
+#. module: extenss_credit
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#, python-format
+msgid "Not exist record in Configuration in Datamart"
+msgstr "No existe registro en Configuración en Datamart"
 
 #. module: extenss_credit
 #: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit_conciliation_lines__display_type__line_note
@@ -1209,6 +1393,31 @@ msgid "PORCENTAJE:"
 msgstr ""
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__sum_capvat
+msgid "Paid VAT capital"
+msgstr ""
+
+#. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__sum_intvat
+msgid "Paid VAT interest"
+msgstr ""
+
+#. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__sum_capital
+msgid "Paid capital "
+msgstr ""
+
+#. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__sum_interest
+msgid "Paid interest"
+msgstr ""
+
+#. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Paid:"
+msgstr ""
+
+#. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_moras__past_due_balance
 msgid "Past due balance"
 msgstr "Saldo vencido"
@@ -1219,11 +1428,13 @@ msgid "Past due interest"
 msgstr "Intereses vencidos"
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__conciliation_credit_ids
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_amortization__payment
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_moras__amount_to_payment
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_restructuring_table__payment
 #: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit_concepts_expiration__concept__payment
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
 msgid "Payment"
 msgstr "Pagos"
 
@@ -1234,9 +1445,13 @@ msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_concept_payments__date_paid
-#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__payment_date
 msgid "Payment date"
 msgstr "Fecha de pago"
+
+#. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__payment_date
+msgid "Payment date notice"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__payment_number
@@ -1244,11 +1459,15 @@ msgid "Payment number"
 msgstr "Número de pago"
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__penalty
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__penalty_adv
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__penalty
 msgid "Penalty"
 msgstr "Multa"
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__penalty_amount
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__penalty_amount_adv
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__penalty_amount
 #: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit_concepts_expiration__concept__penalty_amount
 msgid "Penalty Amount"
@@ -1257,6 +1476,7 @@ msgstr "Monto de multa"
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_amortization__penalty_amount
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_restructuring_table__penalty_amount
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
 msgid "Penalty amount"
 msgstr "Monto de multa"
 
@@ -1280,8 +1500,14 @@ msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__product_id
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_my_credits
 msgid "Product"
 msgstr "Producto"
+
+#. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Product:"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit_concepts_expiration__concept__purchase_option
@@ -1318,12 +1544,17 @@ msgstr "Moratoria de tasa de interés"
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__rate_moratorium
 msgid "Rate moratorium"
-msgstr "Tasa moratoria"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__rate_type
 msgid "Rate type"
 msgstr "Tipo de Tasa"
+
+#. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Rate type:"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__ratification
@@ -1381,27 +1612,21 @@ msgstr "Reestructura"
 #. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
 msgid ""
-"Río  Lerma No.  333, P. 2, Col. Cuauhtémoc,  Del.  Cuauhtémoc, México D.F., C.P. "
-"06500  \n"
+"Río  Lerma No.  333, P. 2, Col. Cuauhtémoc,  Del.  Cuauhtémoc, México D.F., C.P. 06500  \n"
 "Tel. 3685 3920 Ext. 576   Horario de Atención: Lunes a Viernes 9:00 a 18:00 hrs.\n"
-"Responsable REUNE: Fridna Villarreal Murillo   Email: fridna.villarreal@credipyme."
-"com.mx\n"
+"Responsable REUNE: Fridna Villarreal Murillo   Email: fridna.villarreal@credipyme.com.mx\n"
 "Página de Internet. www.condusef.gob.mx\n"
-"LUC. Art. 2 \"El Gobierno Federal y las entidades de la administración pública "
-"praestatal no podrán responsabilizarse ni garantizar el resultado de las "
-"operaciones que realicen las uniones, así como tampoco asumir responsabilidad "
-"alguna de las obligaciones contraídas con sus socios o terceros\"\n"
-"Quejas o reclamaciones validas dentro de los 30 días habiles  siguientes  a la "
-"expedición del  presente estado de cuenta. \n"
+"LUC. Art. 2 \"El Gobierno Federal y las entidades de la administración pública praestatal no podrán responsabilizarse ni garantizar el resultado de las operaciones que realicen las uniones, así como tampoco asumir responsabilidad alguna de las obligaciones contraídas con sus socios o terceros\"\n"
+"Quejas o reclamaciones validas dentro de los 30 días habiles  siguientes  a la expedición del  presente estado de cuenta. \n"
 "Los intereses pueden variar conforme a la movilidad del índice referido consultado."
 msgstr ""
 
 #. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
 msgid ""
-"SE EXTIENDE LA PRESENTE CERTIFICACION EN LOS TÉRMINOS DE LOS DOCUMENTOS BASE  DE "
-"LA ACCIÓN RELATIVA AL CÁLCULO DE  LOS  INTERESES ORDINARIOSY MORATORIOS SUSCRITO  "
-"POR  UNA  PARTE __"
+"SE EXTIENDE LA PRESENTE CERTIFICACION EN LOS TÉRMINOS DE LOS DOCUMENTOS BASE"
+"  DE LA ACCIÓN RELATIVA AL CÁLCULO DE  LOS  INTERESES ORDINARIOSY MORATORIOS"
+" SUSCRITO  POR  UNA  PARTE __"
 msgstr ""
 
 #. module: extenss_credit
@@ -1420,11 +1645,25 @@ msgid "Section"
 msgstr "Sección"
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__security_deposit_balance
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__security_deposit_balance
 msgid "Security Deposit Balance"
 msgstr "Saldo de rentas en depósito"
 
 #. module: extenss_credit
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#, python-format
+msgid "Select a payment record"
+msgstr ""
+
+#. module: extenss_credit
+#: code:addons/extenss_credit/models/extenss_credit.py:0
+#, python-format
+msgid "Selects a record with the correct data, amount or client"
+msgstr ""
+
+#. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__date_settlement
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__date_settlement
 msgid "Settlement date"
 msgstr "Fecha de liquidación"
@@ -1438,7 +1677,7 @@ msgstr "La fecha de liquidación debe ser mayor o igual que hoy"
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__start_date_mora
 msgid "Start date mora"
-msgstr "Fecha Inicio mora"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__state
@@ -1479,10 +1718,18 @@ msgstr "Importe impuesto"
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__term
+#: model:ir.model.fields.selection,name:extenss_credit.selection__extenss_credit__advan_type__term
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_my_credits
 msgid "Term"
 msgstr "Plazo"
 
 #. module: extenss_credit
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
+msgid "Term:"
+msgstr ""
+
+#. module: extenss_credit
+#: code:addons/extenss_credit/models/extenss_credit.py:0
 #: code:addons/extenss_credit/models/extenss_credit.py:0
 #, python-format
 msgid "The credit must be current"
@@ -1497,7 +1744,7 @@ msgstr "El saldo final no puede ser negativo"
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__to_pay
 msgid "To pay"
-msgstr "Por pagar"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__total_moras
@@ -1507,7 +1754,7 @@ msgstr "Monto total de moras"
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__count_moras
 msgid "Total Moras"
-msgstr "Total Moras"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__total_paid
@@ -1532,6 +1779,11 @@ msgid "Total Rent"
 msgstr "Renta total"
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__total_advance_adv
+msgid "Total advance"
+msgstr ""
+
+#. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__total_commission
 msgid "Total commission"
 msgstr "Comisión total"
@@ -1549,7 +1801,7 @@ msgstr "Depósito de garantía total"
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__total_interest_mora
 msgid "Total interest mora"
-msgstr "Total interés mora"
+msgstr ""
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_concept_payments__total_paid_cp
@@ -1561,7 +1813,7 @@ msgstr "Total pagado"
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__total_paid_moras
 msgid "Total paid moras"
-msgstr "Total moras pagadas"
+msgstr "Total de moras pagadas"
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__total_payment
@@ -1570,10 +1822,12 @@ msgstr "Pago total"
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__total_rent
+#: model_terms:ir.ui.view,arch_db:extenss_credit.portal_credit_page
 msgid "Total rent"
-msgstr "Total renta"
+msgstr "Renta total"
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__total_settle
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__total_settle
 msgid "Total to Settle"
 msgstr "Total a liquidar"
@@ -1589,12 +1843,14 @@ msgid "Total to pay"
 msgstr "Total a pagar"
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__advan_type
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_conciliation__type_conciliation
 msgid "Type"
 msgstr "Tipo"
 
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_conciliation_lines__type_rec
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__type_rec
 msgid "Type Rec"
 msgstr ""
 
@@ -1632,6 +1888,7 @@ msgid "VAT Payment"
 msgstr "IVA de pago"
 
 #. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__vat_purchase_option
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_request__vat_purchase_option
 msgid "VAT Purchase option"
 msgstr "IVA de opción de compra"
@@ -1644,7 +1901,7 @@ msgstr "Factor de IVA"
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit__vat_guarantee_deposit
 msgid "VAT guarantee deposit"
-msgstr "IVA depósito en Garantía"
+msgstr "IVA depósito en garantía"
 
 #. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
@@ -1669,23 +1926,21 @@ msgstr "Validado"
 #. module: extenss_credit
 #: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__vat_interest_mora
 msgid "Vat interest moratoriums"
-msgstr "IVA interés moratorios"
+msgstr "IVA intereses moratorios"
 
 #. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
-msgid "_     ( _____________________  00/100  M.N.  )  conforme  al  siguiente:"
+msgid ""
+"_     ( _____________________  00/100  M.N.  )  conforme  al  siguiente:"
 msgstr ""
 
 #. module: extenss_credit
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
 msgid ""
 "_  representada  por  el ______________________________, y  por  \n"
-"                                una  tercera  parte  los___________ en  su  "
-"carácter  de  _________________________________, suscrito  con  \n"
-"                                fecha  ________________________ ratificado ante la "
-"fe del Notario Público N° ______ del _________________, \n"
-"                                el Lic. _____________________, contenido en la "
-"escritura numero ______  de fecha _______ por  la  cantidad  de  \n"
+"                                una  tercera  parte  los___________ en  su  carácter  de  _________________________________, suscrito  con  \n"
+"                                fecha  ________________________ ratificado ante la fe del Notario Público N° ______ del _________________, \n"
+"                                el Lic. _____________________, contenido en la escritura numero ______  de fecha _______ por  la  cantidad  de  \n"
 "                                $  _"
 msgstr ""
 
@@ -1708,7 +1963,26 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:extenss_credit.account_status
 msgid ""
 "representada  \n"
-"                                por  el ______________________________,  y  por  "
-"la  otra parte  en  su  carácter  de  arrendatario \n"
+"                                por  el ______________________________,  y  por  la  otra parte  en  su  carácter  de  arrendatario \n"
 "                                _"
+msgstr ""
+
+#. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__sum_con_capital
+msgid "sum capital"
+msgstr ""
+
+#. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__sum_con_capvat
+msgid "sum capvat"
+msgstr ""
+
+#. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__sum_con_interest
+msgid "sum interest"
+msgstr ""
+
+#. module: extenss_credit
+#: model:ir.model.fields,field_description:extenss_credit.field_extenss_credit_expiry_notices__sum_con_intvat
+msgid "sum intvat"
 msgstr ""

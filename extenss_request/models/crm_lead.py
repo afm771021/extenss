@@ -907,6 +907,7 @@ class Lead(models.Model):
     sale_order_ids = fields.One2many('sale.order', 'opportunity_id', string='Orders', domain=lambda self:[('state','=','sale')])
     af_s = fields.Boolean(related='sale_order_ids.af')
     ap_s = fields.Boolean(related='sale_order_ids.ap')
+    cs_s = fields.Boolean(related='sale_order_ids.cs')
     amount = fields.Monetary(related='sale_order_ids.amount', currency_field='company_currency')
     dn_s = fields.Boolean(related='sale_order_ids.dn')
     productid = fields.Many2one(related='sale_order_ids.product_id')

@@ -7,7 +7,6 @@ from dateutil.relativedelta import relativedelta
 
 class ExtenssFF(models.Model):
     _inherit = 'extenss.credit'
-    _description = 'Credit Financial factoring'
 
     # def get_count_credits(self):
     #     count = self.env['extenss.credit'].search_count([('id', '=', self.id)])
