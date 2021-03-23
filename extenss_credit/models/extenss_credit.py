@@ -1398,12 +1398,12 @@ class Credits(models.Model):
 
                 if self.ap == True:
                     if concept.concept == 'payment':
-                        capital_req = total_req
+                        capital_req = concept.amount_concept
                     if concept.concept == 'paymentvat':
                         iva_rent_req = concept.amount_concept
                     if concept.concept == 'intvat':
                         int_vat_req = concept.amount_concept
-                    interest_req = req.interests
+                    interest_req = self.interests_adv
                     pay_req = capital_req + interest_req
                     total_rent_req = iva_rent_req + pay_req
 
