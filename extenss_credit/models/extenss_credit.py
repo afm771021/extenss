@@ -399,7 +399,7 @@ class Credits(models.Model):
     total_moras = fields.Monetary(string='Total Amount Moras', compute='_get_amount_moras', store=True, currency_field='company_currency')
 
     ######
-    sum_capital = fields.Monetary(string='Paid capital ', currency_field='company_currency', compute='_compute_amount_capital', store=True, tracking=True, translate=True)
+    sum_capital = fields.Monetary(string='Paid capital', currency_field='company_currency', compute='_compute_amount_capital', store=True, tracking=True, translate=True)
     sum_interest = fields.Monetary(string='Paid interest', currency_field='company_currency', compute='_compute_amount_interest', store=True, tracking=True, translate=True)
     sum_capvat = fields.Monetary(string='Paid VAT capital', currency_field='company_currency', compute='_compute_amount_capvat', store=True, tracking=True, translate=True)
     sum_intvat = fields.Monetary(string='Paid VAT interest', currency_field='company_currency', compute='_compute_amount_intvat', store=True, tracking=True, translate=True)
@@ -2001,7 +2001,7 @@ class Credits(models.Model):
         else:
             raise ValidationError(_('Not exist record in Configuration in Datamart'))
 
-    def create_notice_expiry(self, num_pay, credit_id, amount, list_concepts, id_req,due_not_date, initial_balance, factor_rate, type_record):
+    def create_notice_expiry(self, num_pay, credit_id, amount, list_concepts, id_req, due_not_date, initial_balance, factor_rate, type_record):
         rec_en = self.env['extenss.credit.expiry_notices']
         rec_cp = self.env['extenss.credit.concepts_expiration']
         id_expiry = rec_en.create({
@@ -2100,6 +2100,7 @@ class Credits(models.Model):
             })
 
     def action_create_advance(self):
+        amount = 0.0
         list_concepts = []
         type_rec = ''
         num_rec  = self.env['extenss.credit.expiry_notices'].search_count([('credit_expiry_id', '=', self.id)])
@@ -2133,7 +2134,7 @@ class Credits(models.Model):
                 list_concepts.append(['penalty_amount', self.penalty_amount_adv])
             amount = round(payment + vat_payment + self.penalty_amount_adv,2)
 
-        id_expiry = self.create_notice_expiry(num_rec, self.id, amount, list_concepts, self.id,self.advance_date, self.balance_inicial, self.factor_rate, type_rec)
+        id_expiry = self.create_notice_expiry(num_rec, self.id, amount, list_concepts, self.id, self.advance_date, self.balance_inicial_adv, self.factor_rate, type_rec)
         return id_expiry
 
 class ExtenssCreditExpiryNotices(models.Model):
