@@ -2134,7 +2134,7 @@ class Credits(models.Model):
                 list_concepts.append(['penalty_amount', self.penalty_amount_adv])
             amount = round(payment + vat_payment + self.penalty_amount_adv,2)
 
-        id_expiry = self.create_notice_expiry(num_rec, self.id, amount, list_concepts, self.id, self.advance_date, self.balance_inicial_adv, self.factor_rate, type_rec)
+        id_expiry = self.create_notice_expiry(num_rec, self.id, amount, list_concepts, self.id, self.advance_date, self.balance_initial_adv, self.factor_rate, type_rec)
         return id_expiry
 
 class ExtenssCreditExpiryNotices(models.Model):
