@@ -2042,10 +2042,10 @@ class Credits(models.Model):
         if self.total_advance_adv == 0:
             raise ValidationError(_('Calculations are missing'))
 
-        id_expiry = self.action_create_advance()
-        _logger.info('id_expiry', id_expiry)
         for reg in self.conciliation_credit_ids:
             if reg.check == False and reg.status == 'pending' and reg.customer == self.customer_id:
+                id_expiry = self.action_create_advance()
+                _logger.info('id_expiry', id_expiry)
                 self.env['extenss.credit.accounting_payments'].action_apply_movement(self.bill_id.id, 'abono', reg.amount,'')
                 _logger.info('Despues de action_apply_movement')
                 _logger.info('id_expiry.id', id_expiry.id)
