@@ -2911,6 +2911,7 @@ class ExtenssCreditConciliation(models.Model):
                 credit_id = reg_s.id
 
             if reg.total_to_pay > 0 and reg.due_not_date >= date_payment and reg.req_credit_id != False:
+                _logger.info('reg.total_to_pay')
                 records_account = self.env['extenss.credit.account'].search([('customer_id', '=', reg.credit_expiry_id.customer_id.id)])
                 for act in records_account:
                     # req=self.env['extenss.credit.request'].search([('id', '=', reg.req_credit_id)])#'&','&','|',,('credit_request_id', '=', credit_id),('type_request','=','early_settlement'),('type_request','=','atc')])
