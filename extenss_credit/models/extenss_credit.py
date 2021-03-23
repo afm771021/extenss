@@ -2036,17 +2036,24 @@ class Credits(models.Model):
         return id_expiry
 
     def action_pay_advance(self):
+        _logger.info('Inicia el proceso de action_pay_advance')
         list_concepts = []
         reg = ''
         if self.total_advance_adv == 0:
             raise ValidationError(_('Calculations are missing'))
 
         id_expiry = self.action_create_advance()
+        _logger.info('id_expiry', id_expiry)
         for reg in self.conciliation_credit_ids:
             if reg.check == False and reg.status == 'pending' and reg.customer == self.customer_id:
                 self.env['extenss.credit.accounting_payments'].action_apply_movement(self.bill_id.id, 'abono', reg.amount,'')
-                self.env['extenss.credit.conciliation'].apply_payment(id_expiry.id, self.payment_date)
+                _logger.info('Despues de action_apply_movement')
+                _logger.info('id_expiry.id', id_expiry.id)
+                _logger.info('self.advance_date', self.advance_date)
+                self.env['extenss.credit.conciliation'].apply_payment(id_expiry.id, self.advance_date)
+                _logger.info('Despues de apply_payment')
                 self.recalculate_amortization_table(self.id, id_expiry.id, self.advan_type)
+                _logger.info('Despues de recalculate_amortization_table')
                 reg.status = 'applied'
                 reg.check = True
             #else:
@@ -2057,6 +2064,7 @@ class Credits(models.Model):
             if regs_conf:
                 for reg_conf in regs_conf:
                     for reg_events in reg_conf.event_id:
+                        _logger.info('reg_events')
                         event_key = reg_events.event_key
                         list_concepts.append(reg.customer.id)
                         list_concepts.append(reg.amount) 
@@ -2886,9 +2894,14 @@ class ExtenssCreditConciliation(models.Model):
         #     self.apply_amount(record.expiry_id, total_amount)
 
     def apply_payment(self, id, date_amort):
+        _logger.info('Inicia apply_payment')
+        _logger.info('id', id)
+        _logger.info('date_amort', date_amort)
         date_payment = datetime.now().date()
         not_rec = self.env['extenss.credit.expiry_notices'].search([('id', '=', id)])
+        _logger.info('not_rec', not_rec)
         for reg in not_rec:
+            _logger.info('reg', reg.id)
             cred = self.env['extenss.credit'].search([('id', '=', reg.credit_expiry_id.id)])
             for reg_s in cred:
                 if date_amort:
