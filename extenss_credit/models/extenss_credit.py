@@ -1770,8 +1770,8 @@ class Credits(models.Model):
                                 pay=((ra*(rate)*pow((1+(rate)),credit.term))-(credit.residual_value*(rate)))/(pow(1+(rate),credit.term)-1)
                         else:
                             #ra=new_balance_table
-                            #pay=new_balance_table/((1-(1/pow((1+(rate)),credit.term-new_pay_num2)))/(rate))
-                            pay=new_balance_table/((1-(1/pow((1+(rate)),credit.term)))/(rate))
+                            pay=new_balance_table/((1-(1/pow((1+(rate)),credit.term-new_pay_num2)))/(rate))
+                            #pay=new_balance_table/((1-(1/pow((1+(rate)),credit.term)))/(rate))
 
                         for amort in credit.amortization_ids:
                             if amort.no_pay > new_pay_num2:
@@ -1807,8 +1807,8 @@ class Credits(models.Model):
                             'amortization_ids': amortization_ids
                         })
                         ra=ra-capital_req
-                        #pay=ra/((1-(1/pow((1+(rate)),credit.term-new_pay_num2)))/(rate))
-                        pay=ra/((1-(1/pow((1+(rate)),credit.term)))/(rate))
+                        pay=ra/((1-(1/pow((1+(rate)),credit.term-new_pay_num2)))/(rate))
+                        #pay=ra/((1-(1/pow((1+(rate)),credit.term)))/(rate))
 
                         if type_record == 'ADV_REC':
                             new_pay_num = new_pay_num2
