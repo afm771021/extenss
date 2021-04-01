@@ -913,6 +913,8 @@ class Lead(models.Model):
     productid = fields.Many2one(related='sale_order_ids.product_id')
     ####
     flag_validated = fields.Boolean(string='Validated', default=False, translate=True)
+    term_cred = fields.Selection([('26','26'),('52','52'),('12','12')], string='Term')
+    frequency_cred = fields.Selection([('week','Week'),('month','Month'),('year','Year')], string='Frequency')
 
     company_currency = fields.Many2one(string='Currency', related='company_id.currency_id', readonly=True, relation="res.currency")
     company_id = fields.Many2one('res.company', string='Company', index=True, default=lambda self: self.env.company.id)
