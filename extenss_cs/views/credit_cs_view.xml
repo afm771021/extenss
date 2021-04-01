@@ -495,7 +495,7 @@
         <field name="name">Simple Credit</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">extenss.credit</field>
-        <field name="view_mode">tree,form,calendar</field>
+        <field name="view_mode">tree,form,calendar,graph,dashboard</field>
         <field name="domain">[('cs', '=', True)]</field>
         <field name="view_ids"
                 eval="[(5, 0, 0),

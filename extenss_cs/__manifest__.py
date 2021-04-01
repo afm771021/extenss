@@ -23,5 +23,6 @@
         'views/credit_cs_condonation_view.xml',
         'views/credit_cs_statement_account_view.xml',
         'views/credit_cs_account_view.xml',
+        'views/website_form.xml',
         ],
 }
