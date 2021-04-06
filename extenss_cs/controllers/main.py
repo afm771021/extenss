@@ -36,6 +36,7 @@ class ExtenssCSController(http.Controller):
                 'product_name': 'cs',
                 'sales_channel_id': id_channel.id,
                 'description': kw.get('term_cred') +" "+  kw.get('frequency_cred'),
+                'planned_revenue': kw.get('planned_revenue'),
             })
 
         return request.render("extenss_cs.cs_send_ok", {})
